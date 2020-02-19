@@ -86,9 +86,9 @@ public class GameView extends View{
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawARGB(250, 127, 199, 255);
-        playerBird.draw(canvas);
-        enemyBird.draw(canvas);
+        canvas.drawARGB(250, 127, 199, 255); // заливаем цветом
+        playerBird.draw(canvas);// отрисовыем птицу игрока на экране
+        enemyBird.draw(canvas); // отрисовываем врага на экране
 
         Paint p = new Paint();
         p.setAntiAlias(true);
